@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Heebo:wght@400;500&family=Nunito+Sans:opsz@6..12&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+}
+
+.main-list-items {
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  padding: 1rem;
+}
+
+.main-list-items li:first-child a {
+  color: #ff6464;
+  border: none;
+  background-color: white;
+}
+
+.main-list-items a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.main-list-items a:hover,
+.main-list-items a:focus {
+  opacity: 0.8;
+  background-color: #142850;
+  border: 2px groove;
+  color: white;
+  border-radius: 25px;
+  padding-inline: 0.5rem;
+}
+
+.main-list-items a:active {
+  color: #ff6464;
+  border: none;
+  background-color: white;
+  opacity: 1;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem;
+}
+
+#container h1 {
+  border: 4px inset;
+}
+
+#container a {
+  color: black;
+  text-decoration: none;
+}
+
+#container a:hover,
+#container a:focus {
+  color: #142850;
+  text-decoration: underline;
+}
+
+#container a:active {
+  color: rgba(30, 143, 255, 0.751);
+  text-decoration: none;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+#container2 p {
+  text-align: center;
+}
+
+@media screen and (max-width: 764px) {
+  .main-list-items {
+    display: none;
+  }
+  #container {
+    padding: 2rem;
+  }
+  .main-nav {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #container {
+    margin-inline: 5em;
+  }
+}
+
+@media screen and (min-width: 2250px) {
+  #container {
+    margin-inline: 10em;
+  }
+}
